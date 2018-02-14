@@ -15,6 +15,9 @@ public class Death : MonoBehaviour {
     private GameObject life3;
 
     [SerializeField]
+    private GameObject ball1;
+
+    
     private Collider death;
 
     private int life;
@@ -25,7 +28,7 @@ public class Death : MonoBehaviour {
         life = 2;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
@@ -33,27 +36,38 @@ public class Death : MonoBehaviour {
 
             if (ball != null)
             {
-                if(life < 0)
+                if (life < 0)
                 {
                     Debug.Log("colision0");
                 }
-                if(life == 2)
+                else
                 {
-                    life -= 1;
-                    DestroyObject(life1);
-                    Debug.Log("colision1");
-                }
-                if (life == 1)
-                {
-                    life -= 1;
-                    DestroyObject(life2);
-                    Debug.Log("colision2");
-                }
-                if (life == 0)
-                {
-                    life -= 1;
-                    DestroyObject(life3);
-                    Debug.Log("colision3");
+                    if (life == 0)
+                    {
+                        life -= 1;
+                        DestroyObject(life3);
+                        Debug.Log("colision3");
+                    }
+                    
+                    else
+                    {
+                        if (life == 1)
+                        {
+                            life -= 1;
+                            DestroyObject(life2);
+                            Debug.Log("colision2");
+                        }
+                        else
+                        {
+                            
+                            if (life == 2)
+                            {
+                                life -= 1;
+                                DestroyObject(life1);
+                                Debug.Log("colision1");
+                            }
+                        }
+                    }
                 }
 
             }
