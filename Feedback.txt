@@ -1,5 +1,5 @@
 Feedback.
-
+************* V 1.0 *************
 Componente Teórico (0.0)
 No encuentro archivo con las respuestas.
 
@@ -7,3 +7,20 @@ Componente Práctico (0.0)
 El fork no tiene ningún cambio respecto del repositorio original.
 
 Total: 0.0
+**********************************
+
+Componente Teórico (1.5)
+1. En en numeral a la respuesta es un poco enredada, pero satisface. En el b, no responde debidamente. Que A.B = 0, significa que los vectores son perpendiculares. (0.2)
+2. OK (0.5)
+3. Ok (0.5)
+4. No necesariamente. El cambio manual de posición puede alterar el cálculo de la física (0.3)
+
+Componente Práctico (0.8)
+1. El UI no se actualiza correctamente (0.0)
+2. OK (1.0)
+3. Hay algo que parece ser este controlador, pero no reinicia el juego cuando el jugador pierde una vida, por lo que perder significa no poder seguir jugando (0.1)
+* No hay propuestas a las bonificaciones
+* Descuento 0.3 por no utilizar OOP
+
+
+Total: 2.3
